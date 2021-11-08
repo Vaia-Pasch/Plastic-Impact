@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Impact Calculator</h1>
+    <main class="main-flex">
+        <section class="flex">
+            <div class="input-info">
+                <label for="price">Price of the bottle :</label>
+                <input type="number" id="price">
+            </div>
+            <div class="input-info">
+                <label for="count">Calculate in a week :</label>
+                <input type="number" id="count">
+            </div>
+            <div class="input-info">
+                <button onclick="getPrice()">CLick</button>
+                <input readonly id="total">
+            </div>
+        </section>
+        <img src="./image_assets/logo-projeto-gea.png" alt="logo of projeto gea">
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+body {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ .flex {
+    margin: 1em;
+    background-color: rgb(228, 225, 225);
+} 
+
+.input-info {
+    margin: 1em;
+}
+
+.input-info:last-child {
+    text-align: center;
+}
+
+input{
+    font-size: 18px;
+    margin-top: 1em;
+    cursor: pointer;
+    border: 1px solid cornflowerblue;
+    padding: .5em;
+    width: 100%;
+}
+
+
+button {
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    padding: 1em;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
