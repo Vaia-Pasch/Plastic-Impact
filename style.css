@@ -5,51 +5,58 @@
     font-family: inherit;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-}
-
-body {
-    font-size: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
     text-align: center;
+    margin: 1em;
 }
 
 .main-flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: .5em;
 }
 
- .flex {
-    margin: 1em;
-    background-color: rgb(228, 225, 225);
+.content {
+    background-color: #B6BCC2;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 } 
 
 .input-info {
     margin: 1em;
 }
 
-.input-info:last-child {
+/* .input-info:last-child {
     text-align: center;
-}
+} */
 
 input{
     font-size: 18px;
-    margin-top: 1em;
     cursor: pointer;
-    border: 1px solid cornflowerblue;
+    border: 1px solid #776899;
     padding: .5em;
-    width: 100%;
+    border-radius: 5px;
 }
 
 
 button {
     cursor: pointer;
-    background-color: darkblue;
+    background-color: #4A4A70;
     color: white;
-    padding: 1em;
+    padding: .5em;
     border-style: none;
     border-radius: 5px;
-    font-size: 18px;
+}
+
+img {
+    /* width: 30%; */
+    margin: auto;
 }

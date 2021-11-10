@@ -12,18 +12,26 @@
 <body>
     <h1>Impact Calculator</h1>
     <main class="main-flex">
-        <section class="flex">
-            <div class="input-info">
-                <label for="price">Price of the bottle :</label>
+        <section class="content">
+            <div class="input-info flex">
+                <label for="price">Price of one bottle of water:</label>
                 <input type="number" id="price">
             </div>
-            <div class="input-info">
-                <label for="count">Calculate in a week :</label>
+            <div class="input-info flex">
+                <label for="count">Number of weeks to be calculated:</label>
                 <input type="number" id="count">
             </div>
-            <div class="input-info">
-                <button onclick="getPrice()">CLick</button>
+            <div class="input-info flex">
+                <button onclick="getPrice()">The money you save is:</button>
                 <input readonly id="total">
+            </div>
+            <div class="input-info flex">
+                <label for="cup">How many take-away beverages per week:</label>
+                <input type="number" id="cup">
+            </div>
+            <div class="input-info flex">
+                <button onclick="getPlastic()">The plastic you save is:</button>
+                <input readonly id="sum">
             </div>
         </section>
         <img src="./image_assets/logo-projeto-gea.png" alt="logo of projeto gea">
