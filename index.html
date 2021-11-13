@@ -10,33 +10,51 @@
 </head>
 
 <body>
-    <h1>Impact Calculator</h1>
+    <!-- HEADER -->
+    <header class="header">
+        <button class="mode" onclick="myFunction()">Dark Mode</button>
+        <h1>Impact Calculator</h1>
+        <i class="fas fa-moon"></i>
+        <a href="https://projetogea.wixsite.com/trash" target="_blank"><img class="logo" src="./image_assets/logo-vector-projeto-gea.png" alt="logo of projeto gea"></a>
+    </header>
+    <!-- MAIN -->
     <main class="main-flex">
         <section class="content">
+            <img class="img-related" src="./image_assets/charles-deluvio-y4kqfFQt-K4-unsplash.jpg" alt="">
+            <figcaption>Photo by Charles Deluvio on Unsplash</figcaption>
             <div class="input-info flex">
                 <label for="price">Price of one bottle of water:</label>
                 <input type="number" id="price">
             </div>
             <div class="input-info flex">
-                <label for="count">Number of weeks to be calculated:</label>
-                <input type="number" id="count">
+                <label for="count">Number of weeks (7days/week):</label>
+                <select id="per" name="per">
+                    <option value="week">Week</option>
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                  </select>
+                <input type="number" id="count">  
             </div>
             <div class="input-info flex">
                 <button onclick="getPrice()">The money you save is:</button>
                 <input readonly id="total">
             </div>
+        </section>
+        <section class="content">
+            <img class="img-related" src="./image_assets/ross-varrette-ACrTnL4mDL4-unsplash.jpg" alt="">
+            <figcaption>Photo by Ross Varrette on Unsplash</figcaption>
             <div class="input-info flex">
-                <label for="cup">How many take-away beverages per week:</label>
+                <label for="cup">Number of take-away beverages per week:</label>
                 <input type="number" id="cup">
             </div>
             <div class="input-info flex">
-                <button onclick="getPlastic()">The plastic you would save with a reusable cup:</button>
+                <button onclick="getPlastic()">Plastic parts you save if you use a reusable cup:</button>
                 <input readonly id="sum">
             </div>
         </section>
-        <img src="./image_assets/logo-projeto-gea.png" alt="logo of projeto gea">
     </main>
 </body>
+<script src="dark-mode.js"></script>
 <script src="script.js"></script>
 
 </html>
