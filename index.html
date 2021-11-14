@@ -18,31 +18,34 @@
         <a href="https://projetogea.wixsite.com/trash" target="_blank"><img class="logo" src="./image_assets/logo-vector-projeto-gea.png" alt="logo of projeto gea"></a>
     </header>
     <!-- MAIN -->
-    <main class="main-flex">
-        <section class="content">
-            <img class="img-related" src="./image_assets/charles-deluvio-y4kqfFQt-K4-unsplash.jpg" alt="">
-            <figcaption>Photo by Charles Deluvio on Unsplash</figcaption>
+    <main class="main-flex slideshow-container">
+        <section class="content mySlides fade blue">
+            <!-- <div>
+            <p>How much money would you save if using a reusable bottle?</p>
+            </div> -->
+            <!-- <img class="img-related" src="./image_assets/charles-deluvio-y4kqfFQt-K4-unsplash.jpg" alt="">
+            <figcaption>Photo by Charles Deluvio on Unsplash</figcaption> -->
             <div class="input-info flex">
                 <label for="price">Price of one bottle of water:</label>
                 <input type="number" id="price">
             </div>
             <div class="input-info flex">
                 <label for="count">Number of weeks (7days/week):</label>
-                <select id="per" name="per">
+                <!-- <select id="per" name="per">
                     <option value="week">Week</option>
                     <option value="month">Month</option>
                     <option value="year">Year</option>
-                  </select>
+                  </select> -->
                 <input type="number" id="count">  
             </div>
             <div class="input-info flex">
-                <button onclick="getPrice()">The money you save is:</button>
+                <button onclick="getPrice()">Click me:</button>
                 <input readonly id="total">
             </div>
         </section>
-        <section class="content">
-            <img class="img-related" src="./image_assets/ross-varrette-ACrTnL4mDL4-unsplash.jpg" alt="">
-            <figcaption>Photo by Ross Varrette on Unsplash</figcaption>
+        <section class="content mySlides fade green">
+            <!-- <img class="img-related" src="./image_assets/ross-varrette-ACrTnL4mDL4-unsplash.jpg" alt="">
+            <figcaption>Photo by Ross Varrette on Unsplash</figcaption> -->
             <div class="input-info flex">
                 <label for="cup">Number of take-away beverages per week:</label>
                 <input type="number" id="cup">
@@ -52,9 +55,12 @@
                 <input readonly id="sum">
             </div>
         </section>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </main>
 </body>
-<script src="dark-mode.js"></script>
 <script src="script.js"></script>
-
+<script src="dark-mode.js"></script>
+<script src="slide.js"></script>
 </html>
