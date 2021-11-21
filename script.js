@@ -1,18 +1,22 @@
-getPrice = function() {
+getPrice = function () {
     const valueOfPrice = Number(document.getElementById("price").value);
-    const perWeek = Number(document.getElementById("count").value);
-    let totalValue = (valueOfPrice * perWeek) * 7;
-    document.getElementById("total").value = totalValue.toFixed(0);
+    const perWeek = Number(document.getElementById("week").value);
+    // const perMonth = Number(document.getElementById("month").value);
+    // const perYear = Number(document.getElementById("year").value);
+    let weeklyValue = valueOfPrice * perWeek;
+    let monthlyValue = weeklyValue * 4;
+    let yearlyValue = weeklyValue * 52;
+    document.getElementById("total").value = weeklyValue.toFixed(2);
+    document.getElementById("month").value = monthlyValue.toFixed(2);
+    document.getElementById("year").value = yearlyValue.toFixed(2);
 }
 
-getPlastic = function() {
+getPlastic = function () {
     const amountOfCups = Number(document.getElementById("cup").value);
-    let getTotal = amountOfCups * 2;
-    document.getElementById("sum").value = getTotal.toFixed(0);
-}
-
-getStraw = function() {
-    const withStraw = Number(document.getElementById("straw").value);
-    let SumUp = withStraw * 3;
-    document.getElementById("sum").value = SumUp.toFixed(0);
+    let getTotalWeek = amountOfCups * 2;
+    let getTotalMonth = getTotalWeek * 4;
+    let getTotalYear = getTotalWeek * 52;
+    document.getElementById("sumOfWeek").value = getTotalWeek.toFixed(0);
+    document.getElementById("sumOfMonth").value = getTotalMonth.toFixed(0);
+    document.getElementById("sumOfYear").value = getTotalYear.toFixed(0);
 }
