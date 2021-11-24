@@ -13,7 +13,8 @@ getPrice = function () {
 
 getPlastic = function () {
     const amountOfCups = Number(document.getElementById("cup").value);
-    let getTotalWeek = amountOfCups * 2;
+    const amountOfStraws = Number(document.getElementById("straw").value);
+    let getTotalWeek = (amountOfCups * 2) + amountOfStraws;
     let getTotalMonth = getTotalWeek * 4;
     let getTotalYear = getTotalWeek * 52;
     document.getElementById("sumOfWeek").value = getTotalWeek.toFixed(0);
