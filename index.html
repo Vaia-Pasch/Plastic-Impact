@@ -23,37 +23,37 @@
 
     <!-- MAIN -->
 
-    <main class="container">
+    <main class="p-3 mb-2 bg-light text-dark fs-5">
 
         <!-- PLASTIC BOTTLES -->
 
         <h2 class="display-6 fs-4 text text-center">Plastic bottles of water</h2>
-        <div class="row my-3 bg-success p-2 text-dark bg-opacity-10">
-            <div class="col">
+        <div class="row g-3 my-3 bg-success p-2 text-dark bg-opacity-10">
+            <div class="col-sm-12 col-md-6">
                 <label for="price">How much does a plastic bottle cost:</label>
                 <input type="number" class="form-control" placeholder="Enter price" id="price" aria-label="Enter price"
                     min="0" step="0.1" />
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-6">
                 <label for="week">How many do you buy per week:</label>
-                <input type="number" class="form-control" placeholder="Enter number" id="week" min="0" />
+                <input type="number" class="form-control" placeholder="Enter number" id="week" aria-label="number of weeks" min="1" />
             </div>
             <div class="">
                 <button type="button" class="btn btn-secondary m-5 text-nowrap" data-bs-toggle="button"
-                    autocomplete="off" aria-pressed="true" onclick="getPrice()">
-                    Click me
-                </button>
+                autocomplete="off" aria-pressed="true" onclick="calculate('bottle', 'price', 'week')">
+                Click me
+            </button>
             </div>
-            <div class="row my-3">
-                <div class="col">
+            <div id="results" class="row my-4 d-flex">
+                <div class="col-sm-12 col-md-4">
                     <label for="total">Per week you spend:</label>
                     <input class="form-control" readonly id="total" />
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <label for="month">Per month you spend:</label>
                     <input class="form-control" readonly id="month" />
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <label for="year">Per year you spend:</label>
                     <input class="form-control" readonly id="year" />
                 </div>
@@ -63,32 +63,32 @@
         <!-- BEVERAGES -->
 
         <h2 class="display-6 fs-4 text text-center">Take-away beverages</h2>
-        <div class="row my-3 bg-primary p-2 text-dark bg-opacity-10">
-            <div class="col">
-                <label for="week">How many take-away beverages do you buy per week:</label>
-                <input type="number" class="form-control" placeholder="Enter number" id="cup" min="0" />
+        <div class="row g-3 my-3 bg-primary p-2 text-dark bg-opacity-10">
+            <div class="col-sm-12 col-md-6">
+                <label for="cup">How many take-away beverages do you buy per week:</label>
+                <input type="number" class="form-control" placeholder="Enter number" id="cup" aria-label="enter number of take-away beverages" min="1"/>
             </div>
-            <div class="col">
-                <label for="week">How many straws per week:</label>
-                <input type="number" class="form-control" placeholder="Enter number" id="straw" min="0" />
+            <div class="col-sm-12 col-md-6">
+                <label for="straw">How many straws per week:</label>
+                <input type="number" class="form-control" placeholder="Enter number" id="straw" aria-label="number of straws" min="1" />
             </div>
             <div class="">
                 <button type="button" class="btn btn-secondary m-5 text-nowrap" data-bs-toggle="button"
-                    autocomplete="off" aria-pressed="true" onclick="getPlastic()">
-                    Click me
-                </button>
+                autocomplete="off" aria-pressed="true" onclick="calculate('plastic', 'cup', 'straw')">
+                Click me
+            </button>
             </div>
-            <div class="row">
-                <div class="col">
-                    <label for="total">Plastic pieces you waste per week:</label>
-                    <input class="form-control" readonly id="sumOfWeek" />
+            <div id="result" class="row my-4 d-flex">
+                <div class="col-sm-12 col-md-4">
+                    <label for="sumOfWeek">Plastic pieces you waste per week:</label>
+                    <input class="form-control" readonly id="sumOfWeek"/>
                 </div>
-                <div class="col">
-                    <label for="month">Plastic pieces you waste per month:</label>
+                <div class="col-sm-12 col-md-4">
+                    <label for="sumOfMonth">Plastic pieces you waste per month:</label>
                     <input class="form-control" readonly id="sumOfMonth" />
                 </div>
-                <div class="col">
-                    <label for="year">Plastic pieces you waste per year:</label>
+                <div class="col-sm-12 col-md-4">
+                    <label for="sumOfYear">Plastic pieces you waste per year:</label>
                     <input class="form-control" readonly id="sumOfYear" />
                 </div>
             </div>
