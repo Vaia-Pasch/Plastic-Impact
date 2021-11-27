@@ -13,138 +13,181 @@
 
 <body class="bg-light">
 
-    <!-- HEADER -->
+<!-- NAV -->
 
-    <header class="my-4">
-        <h1 class="display-3">Impact Calculator</h1>
-        <a href="https://projetogea.wixsite.com/trash" target="_blank"><img class="logo"
-                src="./image_assets/logo-vector-projeto-gea.png" alt="projeto gea logo"/></a>
-    </header>
+<nav>
+<ul class="nav nav-pills flex-column flex-sm-row justify-content-center py-3 my-3 fs-5">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#calculator">Calculator</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#facts">Facts</a>
+    </li>
+  </ul>
+</nav>
+     <!-- EXPLAIN -->
+<section class="my-3" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 fw-light">
+          <h1 class="">Impact Calculator</h1>
+          <p class="fs-5">"If you change nothing, nothing will change" was a quote on a t-shirt. Sometimes t-shirts know more than us, we should be more like t-shirts. <br>
+          As consumers we buy immoderately and we treat our trash irresponsibly. We need to be more aware of the harsh realities related to every purchase we do. <br>
+          Let's do some calculations, shall we? Scroll with me digital...
+          <span class="fst-italic fs-6" >Inspired by Projeto Gea</span>
+          </p>
+          <button type="button" class="btn btn-outline-dark btn-large"><a class="text-decoration-none"  href="https://projetogea.wixsite.com/trash" target="_blank" >
+              Projeto Gea</a></button>
+        </div>
+        <div class="col-sm-12 col-md-6 img-col">
+          <img src="./image_assets/plastic-pollution.png" class="img-fluid" alt="plastic bottles on a blue background">
+        </div>
+      </div>
+    </div>
+</section>
 
     <!-- MAIN -->
-
-    <main class="p-3 mb-2 bg-light text-dark fs-5">
-
-        <!-- PLASTIC BOTTLES -->
-
-        <h2 class="display-6 fs-4 text text-center">Plastic bottles of water</h2>
-        <div class="row g-3 my-3 bg-success p-2 text-dark bg-opacity-10">
-            <div class="col-sm-12 col-md-6">
-                <label for="price">How much does a plastic bottle cost:</label>
-                <input type="number" class="form-control" placeholder="Enter price" id="price" aria-label="Enter price"
-                    min="0" step="0.1" />
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <label for="week">How many do you buy per week:</label>
-                <input type="number" class="form-control" placeholder="Enter number" id="week" aria-label="number of weeks" min="1" />
-            </div>
-            <div class="">
-                <button type="button" class="btn btn-secondary m-5 text-nowrap" data-bs-toggle="button"
+    <!-- PLASTIC BOTTLES -->
+    <main id="calculator" class="container p-3 bg-light text-dark fs-6">
+    <div class="row">
+    <div class="col-sm-12 col-md-6">
+    <h2 class="display-6 fs-4 text text-center fw-light">Plastic bottles of water</h2>
+    <div id="plastic-bottles" class="row g-3 my-3 bg-secondary p-2 text-dark bg-opacity-10">
+        <div class="col-sm-12 col-md-12">
+            <label for="price">How much does a plastic bottle cost:</label>
+            <input type="number" class="form-control" placeholder="Enter price" id="price" aria-label="Enter price"
+                min="0" step="0.1" />
+        </div>
+        <div class="col-sm-12 col-md-12">
+            <label for="week">How many do you buy per week:</label>
+            <input type="number" class="form-control" placeholder="Enter number" id="week"
+                aria-label="number of weeks" min="1" />
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-outline-dark m-5 text-nowrap" data-bs-toggle="button"
                 autocomplete="off" aria-pressed="true" onclick="calculate('bottle', 'price', 'week')">
                 Click me
             </button>
+        </div>
+        <div id="results" class="row my-4 d-flex">
+            <div class="col-sm-12 col-md-12">
+                <label for="total">Per week you spend:</label>
+                <input class="form-control" readonly id="total" />
             </div>
-            <div id="results" class="row my-4 d-flex">
-                <div class="col-sm-12 col-md-4">
-                    <label for="total">Per week you spend:</label>
-                    <input class="form-control" readonly id="total" />
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <label for="month">Per month you spend:</label>
-                    <input class="form-control" readonly id="month" />
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <label for="year">Per year you spend:</label>
-                    <input class="form-control" readonly id="year" />
-                </div>
+            <div class="col-sm-12 col-md-12">
+                <label for="month">Per month you spend:</label>
+                <input class="form-control" readonly id="month" />
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <label for="year">Per year you spend:</label>
+                <input class="form-control" readonly id="year" />
             </div>
         </div>
+    </div>
+    </div>
 
-        <!-- BEVERAGES -->
-
-        <h2 class="display-6 fs-4 text text-center">Take-away beverages</h2>
-        <div class="row g-3 my-3 bg-primary p-2 text-dark bg-opacity-10">
-            <div class="col-sm-12 col-md-6">
-                <label for="cup">How many take-away beverages do you buy per week:</label>
-                <input type="number" class="form-control" placeholder="Enter number" id="cup" aria-label="enter number of take-away beverages" min="1"/>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <label for="straw">How many straws per week:</label>
-                <input type="number" class="form-control" placeholder="Enter number" id="straw" aria-label="number of straws" min="1" />
-            </div>
-            <div class="">
-                <button type="button" class="btn btn-secondary m-5 text-nowrap" data-bs-toggle="button"
-                autocomplete="off" aria-pressed="true" onclick="calculate('plastic', 'cup', 'straw')">
+    <!-- BEVERAGES -->
+    <div class="col-sm-12 col-md-6">
+    <h2 class="display-6 fs-4 text text-center">Take-away beverages</h2>
+    <div id="take-away" class="row g-3 my-3 bg-secondary p-2 text-dark bg-opacity-10">
+        <div class="col-sm-12 col-md-12">
+            <label for="cup">How many take-away beverages do you buy per week:</label>
+            <input type="number" class="form-control" placeholder="Enter number" id="cup"
+                aria-label="enter number of take-away beverages" min="1" />
+        </div>
+        <!-- <div class="col-sm-12 col-md-6">
+            <label for="option">Do you use a straw:</label>
+            <select id="option" class="form-control" onchange="selection()">
+                <option value=""> Make a choice </option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div> -->
+        <div class="col-sm-12 col-md-12">
+            <label for="amount">How many straws per week:</label>
+            <input type="number" class="form-control" placeholder="Enter number" id="amount"
+                aria-label="enter number of take-away beverages" min="1" />
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-outline-dark m-5 text-nowrap" data-bs-toggle="button"
+                autocomplete="off" aria-pressed="true" onclick="calculate('plastic', 'cup', 'straw', 'option')">
                 Click me
             </button>
-            </div>
-            <div id="result" class="row my-4 d-flex">
-                <div class="col-sm-12 col-md-4">
-                    <label for="sumOfWeek">Plastic pieces you waste per week:</label>
-                    <input class="form-control" readonly id="sumOfWeek"/>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <label for="sumOfMonth">Plastic pieces you waste per month:</label>
-                    <input class="form-control" readonly id="sumOfMonth" />
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <label for="sumOfYear">Plastic pieces you waste per year:</label>
-                    <input class="form-control" readonly id="sumOfYear" />
-                </div>
-            </div>
         </div>
-    </main>
-
-    <!-- FACTS -->
-
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="button" class="btn btn-primary my-5 coloured" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
-            Facts
-        </button>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Did you know...</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-
-                    <p>The process of producing bottled water requires around 6 times as much water per bottle as
-                        there is in the container.</p>
-                    <figcaption class="blockquote-footer">Check out <a href="https://plasticoceans.org/the-facts/"
-                            target="_blank" rel="noopener noreferrer">plasticoceans.org</a></figcaption>
-
-                    <p>Today, we produce about 300 million tonnes of plastic waste every year. That's nearly
-                        equivalent to the weight of the entire human population.</p>
-                    <figcaption class="blockquote-footer">Check out <a
-                            href="https://www.unep.org/interactive/beat-plastic-pollution/" target="_blank"
-                            rel="noopener noreferrer">unep.org</a></figcaption>
-
-                    <p>Worldwide, 73% of beach litter is plastic: filters from cigarette butts, bottles, bottle caps,
-                        food wrappers, grocery bags, and polystyrene containers.</p>
-                    <figcaption class="blockquote-footer">Check out <a
-                            href="https://www.nationalgeographic.co.uk/10-shocking-facts-about-plastic" target="_blank"
-                            rel="noopener noreferrer">nationalgeographic.co.uk</a></figcaption>
-
-                    <p>40 percent of plastic produced is packaging, used just once and then discarded.</p>
-                    <figcaption class="blockquote-footer">Check out <a
-                            href="https://www.nationalgeographic.com/science/article/plastics-facts-infographics-ocean-pollution"
-                            target="_blank" rel="noopener noreferrer">nationalgeographic</a></figcaption>
-
-                    <p>Roughly two-thirds of all plastic ever produced has been released into the environment and remain there in some form</p>
-                    <figcaption class="blockquote-footer">Check out <a
-                        href= "https://www.ciel.org/wp-content/uploads/2017/09/Fueling-Plastics-Fossils-Plastics-Petrochemical-Feedstocks.pdf"
-                        target="_blank" rel="noopener noreferrer">Center For International Environmental Law (CIEL)</a></figcaption>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+        <div id="result" class="row my-4 d-flex">
+            <div class="col-sm-12 col-md-12">
+                <label for="sumOfWeek">Plastic pieces you waste per week:</label>
+                <input class="form-control" readonly id="sumOfWeek" />
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <label for="sumOfMonth">Plastic pieces you waste per month:</label>
+                <input class="form-control" readonly id="sumOfMonth" />
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <label for="sumOfYear">Plastic pieces you waste per year:</label>
+                <input class="form-control" readonly id="sumOfYear" />
             </div>
         </div>
     </div>
+</div>
+</div>
+</main>
+
+      <!-- CARDS - INFO -->
+
+      <section id="facts" class="row cards g-3 my-3 me-0 justify-content-evenly">
+        <h3 class="fw-light text-center">Facts</h3>
+      <div class="col-md-4 col-sm-12 p-0 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><a
+                href="https://www.unep.org/interactive/beat-plastic-pollution/" target="_blank" class="text-decoration-none"
+                rel="noopener noreferrer">unep.org</a></h5>
+            <p class="card-text">Today, we produce about 300 million tonnes of plastic waste every year. That's nearly
+                equivalent to the weight of the entire human population.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex col-sm-12 p-0 justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><a
+                href="https://www.nationalgeographic.co.uk/10-shocking-facts-about-plastic" target="_blank" class="text-decoration-none"
+                rel="noopener noreferrer">nationalgeographic.co.uk</a></h5>
+            <p class="card-text">Worldwide, 73% of beach litter is plastic: filters from cigarette butts, bottles, bottle caps,
+                food wrappers, grocery bags, and polystyrene containers</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex col-sm-12 p-0 justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><a
+                href="https://www.nationalgeographic.com/science/article/plastics-facts-infographics-ocean-pollution"
+                target="_blank" class="text-decoration-none" rel="noopener noreferrer">nationalgeographic</a></h5>
+            <p class="card-text">40 percent of plastic produced is packaging, used just once and then discarded.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+        <!-- TYPE -->
+
+        <section>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col fw-light">
+                  <h4>The numbers we used for the calculator</h4>
+                  <p>7 days in a week <br>
+                    4 weeks in a month <br>
+                    52 weeks in a year</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
     <!-- SOLUTIONS -->
 

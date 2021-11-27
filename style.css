@@ -1,15 +1,20 @@
-header {
-    text-align: center;
+:root {
+  --nav-color: rgb(182, 163, 190);
 }
   
-  h1 {
-    display: inline-block;
-    color: #5c5080;
-}
-  .logo {
-    width: 5em;
+  h1, .nav-link, a, h2, h3, h4 {
+    color: var(--nav-color)!important;
+} 
+.img-col {
+  justify-content: flex-end; 
+  margin-top: 100px;
 }
 
-/* .none {
- visibility: hidden;
-} */
+.img-fluid:hover + .hide {
+  display: block;
+}
+.card {
+  box-shadow: 50px 7px 16px #f9f9f9!important;
+  border: 0!important;
+  text-align: center;
+}
