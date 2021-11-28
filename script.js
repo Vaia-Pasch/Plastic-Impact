@@ -1,6 +1,7 @@
-calculate = function (type, firstInput, secondInput) {
+calculate = function (type, firstInput, secondInput, straw) {
       const inputA = Number(document.getElementById(firstInput).value);
       const inputB = Number(document.getElementById(secondInput).value);
+      const strawOptionValue = straw && Number(document.getElementById(straw).value);
   
     if (type === "bottle") {
       let weeklyValue = inputA * inputB;
@@ -13,6 +14,7 @@ calculate = function (type, firstInput, secondInput) {
     }
  
     if (type === "plastic") {
+        const straws = strawOptionValue ? inputB : 0;
         let getTotalWeek = inputA * 2 + inputB;
         let getTotalMonth = getTotalWeek * 4;
         let getTotalYear = getTotalWeek * 52;
