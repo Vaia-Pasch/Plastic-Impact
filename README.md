@@ -7,4 +7,4 @@ The idea is inspired by Projeto Gea, a personal project of mine, which was creat
 
 This is the beginning of the project, and since I live for change, it will get usual updates. 
 
-I want to thank the people that have helped with my code so far, Vageli for being such a vagelis, Antonis a mentor in SHA and Mehmet my colleague in SHA. 
+I want to thank the people that have helped with my code so far, Vageli (vagelisp) for being such a vagelis, Antonis (antonisPanos) a mentor in SHA and Mehmet (sayinmehmet47) my colleague in SHA. 
