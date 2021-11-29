@@ -2,7 +2,7 @@
   --nav-color: rgb(148, 109, 165);
 }
   
-  h1, .nav-link, a, h2, h3, h4 {
+h1, .nav-link, a, h2, h3, h4 {
     color: var(--nav-color)!important;
 } 
 .img-col {
