@@ -15,7 +15,7 @@ calculate = function (type, firstInput, secondInput, straw) {
  
     if (type === "plastic") {
         const straws = strawOptionValue ? inputB : 0;
-        let getTotalWeek = inputA * 2 + inputB;
+        let getTotalWeek = inputA * 2 + straws;
         let getTotalMonth = getTotalWeek * 4;
         let getTotalYear = getTotalWeek * 52;
     
