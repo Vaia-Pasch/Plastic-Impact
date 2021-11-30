@@ -135,13 +135,13 @@
           </div>
           <div class="col-sm-12 col-md-6">
             <label for="straw">Do you use a straw:</label>
-            <select id="straw" class="form-control" onchange="selection()">
+            <select id="straw" class="form-control" onchange="selection(this)">
               <option value=""> Make a choice &#128071; </option>
               <option value="0">No</option>
               <option value="1">Yes</option>
             </select>
           </div>
-          <div class="col-sm-12 col-md-12">
+          <div id="counting" class="col-sm-12 col-md-12">
             <label for="amount">How many straws per week:</label>
             <input type="number" class="form-control" placeholder="Enter number" id="amount"
               aria-label="enter number of take-away beverages" min="1" />
