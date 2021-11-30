@@ -24,3 +24,18 @@ calculate = function (type, firstInput, secondInput, straw) {
         document.getElementById("sumOfYear").value = getTotalYear.toFixed(0);
       }
   };
+selection = function (option) {
+  const value = option.value;
+  const element = document.getElementById("counting");
+  switch (value) {
+    case "0":
+      element.style.display = "none";
+      break;
+    case "1":
+      element.style.display = "block";
+      break;
+    default:
+      // do nothing
+      break;
+  }
+};
