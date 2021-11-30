@@ -1,4 +1,4 @@
-IMPACT CALCULATOR 
+ IMPACT CALCULATOR, FACTS & SOLUTIONS 
 
 The aim of the project is to calculate how much money & plastic we waste in our daily life. 
 You can use the two calculators (plastic bottles of water & beverages) to see your numbers and read the sections on your right in each calculator with some facts and of course with solutions.
@@ -7,4 +7,4 @@ The idea is inspired by Projeto Gea, a personal project of mine, which was creat
 
 This is the beginning of the project, and since I live for change, it will get usual updates. 
 
-I want to thank the people that have helped with my code so far, Vageli (vagelisp) for being such a vagelis, Antonis (antonisPanos) a mentor in SHA and Mehmet (sayinmehmet47) my colleague in SHA. 
+I want to thank the people that have helped me with my code journey, filled with questions, doubts and being stuck, Vageli (vagelisp) for being such a vagelis, Antonis (antonisPanos) a mentor in SHA, Mehmet (sayinmehmet47) my colleague in SHA and Valantis from my workplace. 
