@@ -44,14 +44,14 @@ selection = function (option) {
 let count = 0; 
 
 function sold()
-{    
-    count++; 
+{   
+    count+=17000;
     const stuff = document.getElementById('stuff');
     stuff.innerHTML = "&#128562;: " + count;
 }
 
-function begin()
-{
+function begin() {
+    
     sold();
     // changed it from setTimeout
     setInterval(begin, 1000, window);
