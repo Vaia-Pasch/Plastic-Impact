@@ -36,3 +36,27 @@ selection = function (option) {
       break;
   }
 };
+
+// COUNTER
+
+// 1,000,000 is being sold every minute, roughly 17,000 every second
+
+let count = 0; 
+
+function sold()
+{    
+    count++; 
+    const stuff = document.getElementById('stuff');
+    stuff.innerHTML = "&#128562;: " + count;
+}
+
+function begin()
+{
+    sold();
+    // changed it from setTimeout
+    setInterval(begin, 1000, window);
+}
+
+document.addEventListener('DOMContentLoaded', function () {    
+    begin();
+});
