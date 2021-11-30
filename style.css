@@ -13,11 +13,6 @@ h1, .nav-link, a, h2, h3, h4 {
 .img-fluid:hover + .hide {
   display: block;
 }
-.card {
-  box-shadow: 50px 7px 16px #f9f9f9!important;
-  border: 0!important;
-  text-align: center;
-}
 
 .style li {
   list-style-type: "\1F644";
@@ -27,7 +22,8 @@ h1, .nav-link, a, h2, h3, h4 {
   list-style-type: "\1F609"
 }
 
-.border {
+.bordered {
+  border-style: 0!important;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
 }
