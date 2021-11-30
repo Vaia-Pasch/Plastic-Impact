@@ -10,10 +10,6 @@ h1, .nav-link, a, h2, h3, h4 {
   margin-top: 100px;
 }
 
-.img-fluid:hover + .hide {
-  display: block;
-}
-
 .style li {
   list-style-type: "\1F644";
 }
