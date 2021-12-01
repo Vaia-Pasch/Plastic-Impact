@@ -47,7 +47,7 @@ function sold()
 {   
     count+=17000;
     const stuff = document.getElementById('stuff');
-    stuff.innerHTML = "&#128562;: " + count.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    stuff.innerHTML = count.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 }
 
 function begin() {
