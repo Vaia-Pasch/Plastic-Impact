@@ -32,7 +32,3 @@ h1, .nav-link, a, h2, h3, h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.card {
-  border-style: none!important;
-}
