@@ -54,7 +54,7 @@ function begin() {
     
     sold();
     // changed it from setTimeout
-    setInterval(begin, 1000, window);
+    setInterval(sold, 1000, window);
 }
 
 document.addEventListener('DOMContentLoaded', function () {    
