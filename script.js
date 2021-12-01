@@ -7,18 +7,18 @@ calculate = function (type, firstInput, secondInput) {
     let monthlyValue = weeklyValue * 4;
     let yearlyValue = weeklyValue * 52;
 
-    document.getElementById("total").value = weeklyValue.toFixed(2).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-    document.getElementById("month").value = monthlyValue.toFixed(2).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-    document.getElementById("year").value = yearlyValue.toFixed(2).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    document.getElementById("total").value = weeklyValue.toLocaleString();
+    document.getElementById("month").value = monthlyValue.toLocaleString();
+    document.getElementById("year").value = yearlyValue.toLocaleString();
   } else type === "plastic";
   {
     let getTotalWeek = inputA * 2 + inputB;
     let getTotalMonth = getTotalWeek * 4;
     let getTotalYear = getTotalWeek * 52;
 
-    document.getElementById("sumOfWeek").value = getTotalWeek.toFixed(0).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-    document.getElementById("sumOfMonth").value = getTotalMonth.toFixed(0).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-    document.getElementById("sumOfYear").value = getTotalYear.toFixed(0).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    document.getElementById("sumOfWeek").value = getTotalWeek.toLocaleString();
+    document.getElementById("sumOfMonth").value = getTotalMonth.toLocaleString();
+    document.getElementById("sumOfYear").value = getTotalYear.toLocaleString();
   }
 };
 selection = function (option) {
@@ -47,7 +47,7 @@ function sold()
 {   
     count+=17000;
     const stuff = document.getElementById('stuff');
-    stuff.innerHTML = count.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    stuff.innerHTML = count.toLocaleString();
 }
 
 function begin() {
