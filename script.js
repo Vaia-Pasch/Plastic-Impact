@@ -2,16 +2,17 @@ calculate = function (type, firstInput, secondInput) {
   const inputA = Number(document.getElementById(firstInput).value);
   const inputB = Number(document.getElementById(secondInput).value);
 
-  if (type === "bottle") {
-    let weeklyValue = inputA * inputB;
-    let monthlyValue = weeklyValue * 4;
-    let yearlyValue = weeklyValue * 52;
+if (type === "bottle") {
+  let weeklyValue = inputA * inputB;
+  let monthlyValue = weeklyValue * 4;
+  let yearlyValue = weeklyValue * 52;
 
-    document.getElementById("total").value = weeklyValue.toLocaleString();
-    document.getElementById("month").value = monthlyValue.toLocaleString();
-    document.getElementById("year").value = yearlyValue.toLocaleString();
-  } else type === "plastic";
-  {
+  document.getElementById("total").value = weeklyValue.toFixed(2).toLocaleString();
+  document.getElementById("month").value = monthlyValue.toFixed(2).toLocaleString();
+  document.getElementById("year").value = yearlyValue.toFixed(2).toLocaleString();
+}
+
+if (type === "plastic") {
     let getTotalWeek = inputA * 2 + inputB;
     let getTotalMonth = getTotalWeek * 4;
     let getTotalYear = getTotalWeek * 52;
@@ -21,6 +22,7 @@ calculate = function (type, firstInput, secondInput) {
     document.getElementById("sumOfYear").value = getTotalYear.toLocaleString();
   }
 };
+
 selection = function (option) {
   const value = option.value;
   const element = document.getElementById("counting");
