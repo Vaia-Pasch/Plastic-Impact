@@ -33,6 +33,7 @@ h1, .nav-link, a, h2, h3, h4 {
   -webkit-text-fill-color: transparent;
 }
 
-.card {
-  border-style: none!important;
+
+.text {
+  color: #9C2542;
 }
