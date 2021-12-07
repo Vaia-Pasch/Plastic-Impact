@@ -7,9 +7,10 @@ if (type === "bottle") {
   let monthlyValue = weeklyValue * 4;
   let yearlyValue = weeklyValue * 52;
 
-  document.getElementById("total").value = weeklyValue.toLocaleString();
-  document.getElementById("month").value = monthlyValue.toLocaleString();
-  document.getElementById("year").value = yearlyValue.toLocaleString();
+  document.getElementById("total").value = weeklyValue.toLocaleString();    
+  document.getElementById("month").value = monthlyValue.toLocaleString();   
+  document.getElementById("year").value = yearlyValue.toLocaleString();     
+                                                                            
 }
 
 if (type === "plastic") {
