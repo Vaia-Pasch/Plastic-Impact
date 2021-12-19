@@ -12,6 +12,7 @@ h1, .nav-link, a, h2, h3, h4 {
 
 .style li {
   list-style-type: "\1F644";
+  text-indent: 10px;
 }
 
 .style .positive {
